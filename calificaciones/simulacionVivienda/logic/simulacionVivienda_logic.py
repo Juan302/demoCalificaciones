@@ -40,3 +40,4 @@ def get_consulta(nueva_consulta):
     return viviendasValidas
 
 
+
