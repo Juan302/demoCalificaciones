@@ -18,4 +18,7 @@ class Calificacion(models.Model):
     mensaje = models.CharField(max_length=200)
     puntuacion = models.FloatField()
 
-    
+class Calificacion2(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
