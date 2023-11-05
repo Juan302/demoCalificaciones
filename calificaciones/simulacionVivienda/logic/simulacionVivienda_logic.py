@@ -39,5 +39,32 @@ def get_consulta(nueva_consulta):
     viviendasValidas = Vivienda.objects.all().filter(precio = consulta.precioMaximo, distanciaAlaUniversidad = consulta.distanciaAlaUniversidad, parqueadero = consulta.parqueadero)
     return viviendasValidas
 
+def create_transportes(nuevo_transporte, id_vivienda):
+    transporte = Transporte(
+        vivienda = Vivienda.objects.get(pk=id_vivienda),
+        nombre = nuevo_transporte["nombre"],
+        precio = nuevo_transporte["precio"],
+        idDeVivienda = id_vivienda
+    )
+    transporte.save()
+    return transporte
 
+def create_transporteee(nuevo_transporte, id_vivienda):
+    transporte = Transporte(
+        vivienda = Vivienda.objects.get(pk=id_vivienda),
+        nombre = nuevo_transporte["nombre"],
+        precio = nuevo_transporte["precio"],
+        idDeVivienda = id_vivienda
+    )
+    transporte.save()
+    return transporte
 
+def create_transporte(nuevo_transporte, id_vivienda):
+    transporte = Transporte(
+        vivienda = Vivienda.objects.get(pk=id_vivienda),
+        nombre = nuevo_transporte["nombre"],
+        precio = nuevo_transporte["precio"],
+        idDeVivienda = id_vivienda
+    )
+    transporte.save()
+    return transporte

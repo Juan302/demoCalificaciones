@@ -2,8 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-
-
 class Psicologo(models.Model):
     nombre = models.CharField(max_length=100) 
     promedio_calificaciones = models.FloatField()
@@ -56,6 +54,26 @@ class Calificacionesonar(models.Model):
     puntuacion = models.FloatField()
 
 class Calificacionesppl(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Cali(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class ca(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Col(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Calidadex(models.Model):
     psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
     mensaje = models.CharField(max_length=200)
     puntuacion = models.FloatField()
