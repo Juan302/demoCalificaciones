@@ -48,3 +48,93 @@ def calificacion_viewsonar(request,id_psicologo):
         calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
         calificacion = serializers.serialize('json', [calificacion_dto,])
         return HttpResponse(calificacion, 'application/json')
+
+
+@csrf_exempt
+def calificacion_viewpeo(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+    
+
+@csrf_exempt
+def calificacion_viewss(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+
+@csrf_exempt
+def calificacion_vie(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+
+@csrf_exempt
+def calificacion_viewport(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+
+@csrf_exempt
+def calificacion_viewred(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+    
+@csrf_exempt
+def cal(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+
+@csrf_exempt
+def ql(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def cafo(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+    
+@csrf_exempt
+def lol(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def nota(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def otra(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def bb(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
