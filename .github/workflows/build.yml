@@ -21,6 +21,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Set SonarCloud properties
+        run: |
+          echo "sonar.projectKey=Juan302_demoCalificaciones" >> sonar-project.properties
+          echo "sonar.organization=juan302" >> sonar-project.properties
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
