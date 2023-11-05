@@ -34,3 +34,28 @@ class Calificacionesmil(models.Model):
     mensaje = models.CharField(max_length=200)
     puntuacion = models.FloatField()
 
+
+class Calificacionesmil2(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Calificacionesmil1(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Calificaciones841(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Calificacionesonar(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()
+
+class Calificacionesppl(models.Model):
+    psicologo = models.ForeignKey(Psicologo, on_delete=models.CASCADE)
+    mensaje = models.CharField(max_length=200)
+    puntuacion = models.FloatField()

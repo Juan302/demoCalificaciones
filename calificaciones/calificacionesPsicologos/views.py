@@ -27,3 +27,24 @@ def calificacion_view(request,id_psicologo):
         calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
         calificacion = serializers.serialize('json', [calificacion_dto,])
         return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def calificacion_viewnn(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def calificacion_viewass(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
+
+@csrf_exempt
+def calificacion_viewsonar(request,id_psicologo):
+    if request.method == 'POST':
+        calificacion_dto = cl.create_calificacion(json.loads(request.body),id_psicologo)
+        calificacion = serializers.serialize('json', [calificacion_dto,])
+        return HttpResponse(calificacion, 'application/json')
